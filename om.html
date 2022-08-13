@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
       h1 {
-        color: green;
+        color: skyblue;
         font-style: normal;
         font-family: "Times New Roman", Times, serif;
         font-weight: bolder;
@@ -25,11 +25,13 @@
         border-radius: 100px;
         margin: 10px;
       }
-      .bg {
+      #bg {
+        padding: 0px;
         float: none;
         margin-right: auto;
         margin-left: auto;
         display: block;
+        border: 10px solid black;
       }
       h2 {
         text-align: center;
@@ -40,21 +42,64 @@
         float: none;
         margin: 10px;
       }
+      #Qbutton {
+        position: fixed;
+        padding: 12px 16px;
+        background-color: skyblue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+      }
+      .cdiv {
+        background-color: skyblue;
+        overflow: hidden;
+      }
+      .cdiv a {
+        padding: 16px 10px;
+        display: block;
+        float: left;
+        border: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      #a1,
+      #a2 {
+        float: right;
+        margin-right: 10px;
+      }
+      .cdiv a:hover {
+        color: blue;
+        background-color: aqua;
+      }
+      #Qbutton:hover {
+        color: blue;
+        background-color: aqua;
+      }
     </style>
   </head>
   <body>
+    <div class="cdiv">
+      <a href="#service">Our Services</a>
+      <a href="#accessories">Accessories Available</a>
+      <a href="#gallery">Gallery</a>
+      <a
+        href="https://www.google.com/maps/place/OM+Motorcycle+Workshop/@27.3224314,86.5036349,20.22z/data=!4m5!3m4!1s0x39e9475ea109c0fb:0xb535465b836b3873!8m2!3d27.3218058!4d86.5060222"
+        target="_blank"
+        id="a2"
+        >Directions</a
+      >
+      <a href="/om1.html" target="_blank" id="a1">Contacts</a>
+    </div>
+
     <img src="/Images/pp.jpg" alt="Image of Om Workshop" />
     <h1>OM Motorcycle Workshop</h1>
     <p class="First">
       Motorbikes and Chain saw repair with accessories shop in Okhaldhunga
     </p>
     <p class="First">Open today until 8:00 PM</p>
-    <input type="button" value="QUOTE" />
-    <img src="/Images/banner.PNG" alt="Banner of my Workshop" class="bg" />
-    <a href="#service">Our Services</a>
-    <a href="#accessories">Accessories Available</a>
-    <a href="#gallery">Gallery</a>
-    <a href="/om1.html" target="_blank">Contacts</a>
+    <input type="button" value="GET QUOTE" id="Qbutton" />
+    <img src="/Images/banner.PNG" alt="Banner of my Workshop" id="bg" />
 
     <h2>About Us</h2>
     <p>
