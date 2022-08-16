@@ -68,13 +68,41 @@
         float: right;
         margin-right: 10px;
       }
-      .cdiv a:hover {
+      .cdiv a:hover,
+      .dropdown:hover .dropbtn {
         color: blue;
         background-color: aqua;
       }
       #Qbutton:hover {
         color: blue;
         background-color: aqua;
+      }
+      .dropdown {
+        float: left;
+      }
+      .dropdown .dropbtn {
+        color: white;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        padding: 16px 10px;
+        background-color: skyblue;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .dropcontent {
+        background-color: gainsboro;
+        position: absolute;
+        width: 150px;
+        display: none;
+      }
+      .dropcontent a {
+        display: block;
+        color: black;
+        padding: 12px 14px;
+        float: none;
+      }
+      .dropdown:hover .dropcontent {
+        display: block;
       }
     </style>
   </head>
@@ -83,6 +111,17 @@
       <a href="#service">Our Services</a>
       <a href="#accessories">Accessories Available</a>
       <a href="#gallery">Gallery</a>
+      <div class="dropdown">
+        <button class="dropbtn">Bikes Model</button>
+        <div class="dropcontent">
+          <a href="#">Yamaha</a>
+          <a href="#">Pulsar</a>
+          <a href="#">Bullet</a>
+          <a href="#">Honda</a>
+          <a href="#">Duke</a>
+        </div>
+      </div>
+
       <a
         href="https://www.google.com/maps/place/OM+Motorcycle+Workshop/@27.3224314,86.5036349,20.22z/data=!4m5!3m4!1s0x39e9475ea109c0fb:0xb535465b836b3873!8m2!3d27.3218058!4d86.5060222"
         target="_blank"
