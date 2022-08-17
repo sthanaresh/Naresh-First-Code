@@ -5,106 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      h1 {
-        color: skyblue;
-        font-style: normal;
-        font-family: "Times New Roman", Times, serif;
-        font-weight: bolder;
-        text-align: center;
-      }
-      .First {
-        text-align: center;
-      }
-      img {
-        float: left;
-        object-fit: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        margin: 10px;
-      }
-      #bg {
-        padding: 0px;
-        float: none;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        border: 10px solid black;
-      }
-      h2 {
-        text-align: center;
-        font-family: "Times New Roman", Times, serif;
-        font-weight: bold;
-      }
-      .map {
-        float: none;
-        margin: 10px;
-      }
-      #Qbutton {
-        position: fixed;
-        padding: 12px 16px;
-        background-color: skyblue;
-        color: white;
-        border: none;
-        border-radius: 10px;
-      }
-      .cdiv {
-        background-color: skyblue;
-        overflow: hidden;
-      }
-      .cdiv a {
-        padding: 16px 10px;
-        display: block;
-        float: left;
-        border: 10px;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-      }
-      #a1,
-      #a2 {
-        float: right;
-        margin-right: 10px;
-      }
-      .cdiv a:hover,
-      .dropdown:hover .dropbtn {
-        color: blue;
-        background-color: aqua;
-      }
-      #Qbutton:hover {
-        color: blue;
-        background-color: aqua;
-      }
-      .dropdown {
-        float: left;
-      }
-      .dropdown .dropbtn {
-        color: white;
-        font-size: 20px;
-        outline: none;
-        border: none;
-        padding: 16px 10px;
-        background-color: skyblue;
-        font-family: "Times New Roman", Times, serif;
-      }
-      .dropcontent {
-        background-color: gainsboro;
-        position: absolute;
-        width: 150px;
-        display: none;
-      }
-      .dropcontent a {
-        display: block;
-        color: black;
-        padding: 12px 14px;
-        float: none;
-      }
-      .dropdown:hover .dropcontent {
-        display: block;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="cdiv">
@@ -138,6 +39,8 @@
     </p>
     <p class="First">Open today until 8:00 PM</p>
     <input type="button" value="GET QUOTE" id="Qbutton" />
+    <input type="button" value="Book a seat" id="seatbutton" />
+
     <img src="/Images/banner.PNG" alt="Banner of my Workshop" id="bg" />
 
     <h2>About Us</h2>
@@ -170,6 +73,10 @@
     <h2 id="gallery">Gallery</h2>
     <h2>Contact Us</h2>
     <img src="/Images/map.PNG" alt="Direction Map" class="map" />
+    <button class="feedbackbtn"><span> Feedback</span></button>
+    <button class="msgbtn">
+      <span> Message Me</span> <span class="badge">3</span>
+    </button>
     <a href="#">Jump to Top</a>
   </body>
 </html>
